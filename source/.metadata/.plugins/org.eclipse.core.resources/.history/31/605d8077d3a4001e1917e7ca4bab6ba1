@@ -1,0 +1,14 @@
+package dao;
+
+import java.sql.*;
+
+public class MemberDao {
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	public static Connection getConnection() throws ClassNotFoundException {
+		Class.forName("oracle.jdbc.OracleDriver");
+		
+	}
+}
